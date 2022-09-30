@@ -21,7 +21,7 @@ public class StartPage implements ActionListener {
         label.setVerticalTextPosition(JLabel.TOP);
 
         button.setFocusable(false);
-//        button.addActionListener(this);
+        button.addActionListener(this);
         button.setBounds(0, 0, 1000, 1000);
         button.setBorder(BorderFactory.createEtchedBorder());
 
