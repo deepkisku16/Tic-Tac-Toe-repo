@@ -27,10 +27,10 @@ public class Main extends MainGame{
         if(game.button1.getText().equals("X") && game.button2.getText().equals("X") && game.button3.getText().equals("X")) { /* when button1, button2 and button3 are marked X */
             return true;
         }
-        else if(game.button4.getText().equals("X") && game.button5.getText().equals("X") && game.button6.getText().equals("O")) { /* when button4, button5 and button6 are marked X */
+        else if(game.button4.getText().equals("X") && game.button5.getText().equals("X") && game.button6.getText().equals("X")) { /* when button4, button5 and button6 are marked X */
             return true;
         }
-        else if(game.button2.getText().equals("X") && game.button5.getText().equals("X") && game.button8.getText().equals("O")) { /* when button2, button5 and button8 are marked X */
+        else if(game.button2.getText().equals("X") && game.button5.getText().equals("X") && game.button8.getText().equals("X")) { /* when button2, button5 and button8 are marked X */
             return true;
         }
         else if(game.button1.getText().equals("X") && game.button4.getText().equals("X") && game.button7.getText().equals("X")) { /* when button1, button4, and button7 are marked X */
