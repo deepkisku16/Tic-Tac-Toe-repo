@@ -7,7 +7,6 @@ import java.util.Random;
 public class MainGame implements ActionListener {
     JFrame frame = new JFrame();
     JPanel panel1 = new JPanel();
-//    JPanel panel2 = new JPanel();
     JButton[] button = new JButton[9];
     JButton button1 = new JButton();
     JButton button2 = new JButton();
@@ -21,7 +20,6 @@ public class MainGame implements ActionListener {
     ImageIcon image = new ImageIcon("C:\\Users\\Deep Kisku\\Desktop\\tic tac toe.png");
     static Random first_turn = new Random();
     static boolean turn = first_turn.nextBoolean();
-    static String tstring;
 
     MainGame() {
         button1.addActionListener(this);
@@ -54,179 +52,203 @@ public class MainGame implements ActionListener {
         frame.setVisible(true);
     }
 
-    void playing() {
-        if(turn) {
-            tstring = "O";
+    void winningCombination() {
+        if(button1.getText().equals("X") && button2.getText().equals("X") && button3.getText().equals("X")) { /* when button1, button2 and button3 are marked X */
+            frame.dispose();
+            new ClosingPage("X");
         }
-        else {
-            tstring = "X";
+        else if(button4.getText().equals("X") && button5.getText().equals("X") && button6.getText().equals("X")) { /* when button4, button5 and button6 are marked X */
+            frame.dispose();
+            new ClosingPage("X");
         }
-
+        else if(button2.getText().equals("X") && button5.getText().equals("X") && button8.getText().equals("X")) { /* when button2, button5 and button8 are marked X */
+            frame.dispose();
+            new ClosingPage("X");
+        }
+        else if(button1.getText().equals("X") && button4.getText().equals("X") && button7.getText().equals("X")) { /* when button1, button4, and button7 are marked X */
+            frame.dispose();
+            new ClosingPage("X");
+        }
+        else if(button3.getText().equals("X") && button6.getText().equals("X") && button9.getText().equals("X")) { /* when button3, button6 and button9 are marked X */
+            frame.dispose();
+            new ClosingPage("X");
+        }
+        else if(button7.getText().equals("X") && button8.getText().equals("X") && button9.getText().equals("X")) { /* when button7, button8 and button9 are makred X */
+            frame.dispose();
+            new ClosingPage("X");
+        }
+        else if(button1.getText().equals("X") && button5.getText().equals("X") && button9.getText().equals("X")) { /* when button1, button5 and button9 are marked */
+            frame.dispose();
+            new ClosingPage("X");
+        }
+        else if(button3.getText().equals("X") && button5.getText().equals("X") && button7.getText().equals("X")) { /* when button3, button5 and button7 are marked X */
+            frame.dispose();
+            new ClosingPage("X");
+        }
+        else if(button1.getText().equals("O") && button2.getText().equals("O") && button3.getText().equals("O")) { /* when button1, button2 and button3 are marked O */
+            frame.dispose();
+            new ClosingPage("O");
+        }
+        else if(button1.getText().equals("O") && button4.getText().equals("O") && button7.getText().equals("O")) { /* when button1, button4, and button7 are marked O */
+            frame.dispose();
+            new ClosingPage("O");
+        }
+        else if(button4.getText().equals("O") && button5.getText().equals("O") && button6.getText().equals("O")) { /* when button4, button5, and button6 are marked O */
+            frame.dispose();
+            new ClosingPage("O");
+        }
+        else if(button2.getText().equals("O") && button5.getText().equals("O") && button8.getText().equals("O")) { /* when button2, button5, and button8 are marked O */
+            frame.dispose();
+            new ClosingPage("O");
+        }
+        else if(button3.getText().equals("O") && button6.getText().equals("O") && button9.getText().equals("O")) { /* when button3, button6 and button9 are marked O */
+            frame.dispose();
+            new ClosingPage("O");
+        }
+        else if(button7.getText().equals("O") && button8.getText().equals("O") && button9.getText().equals("O")) { /* when button7, button8 and button9 are marked O */
+            frame.dispose();
+            new ClosingPage("O");
+        }
+        else if(button1.getText().equals("O") && button5.getText().equals("O") && button9.getText().equals("O")) { /* when button1, button5 and button9 are marked O */
+            frame.dispose();
+            new ClosingPage("O");
+        }
+        else if(button3.getText().equals("O") && button5.getText().equals("O") && button7.getText().equals("O")) { /* when button3, button5 and button7 are marked O */
+            frame.dispose();
+            new ClosingPage("O");
+        }
     }
+
 
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == button1) {
             if(turn) {
-                if(button1.getText() == "") {
-                    button1.setEnabled(false);
-                    button1.setText("O");
-                    button1.setFocusable(false);
-                    turn = false;
-                }
+                button1.setEnabled(false);
+                button1.setText("O");
+                button1.setFocusable(false);
+                turn = false;
             }
             else {
-                if(button1.getText() == "") {
-                    button1.setEnabled(false);
-                    button1.setText("X");
-                    button1.setFocusable(false);
-                    turn = true;
-                }
+                button1.setEnabled(false);
+                button1.setText("X");
+                button1.setFocusable(false);
+                turn = true;
             }
         }
         else if(e.getSource() == button2) {
             if(turn) {
-                if(button2.getText() == "") {
-                    button2.setEnabled(false);
-                    button2.setText("O");
-                    button2.setFocusable(false);
-                    turn = false;
-                }
+                button2.setEnabled(false);
+                button2.setText("O");
+                button2.setFocusable(false);
+                turn = false;
             }
             else {
-                if(button2.getText() == "") {
-                    button2.setEnabled(false);
-                    button2.setText("X");
-                    button2.setFocusable(false);
-                    turn = true;
-                }
+                button2.setEnabled(false);
+                button2.setText("X");
+                button2.setFocusable(false);
+                turn = true;
             }
         }
         else if(e.getSource() == button3) {
             if(turn) {
-                if(button3.getText() == "") {
-                    button3.setEnabled(false);
-                    button3.setText("O");
-                    button3.setFocusable(false);
-                    turn = false;
-                }
+                button3.setEnabled(false);
+                button3.setText("O");
+                button3.setFocusable(false);
+                turn = false;
             }
             else {
-                if(button3.getText() == "") {
-                    button3.setEnabled(false);
-                    button3.setText("X");
-                    button3.setFocusable(false);
-                    turn = true;
-                }
+                button3.setEnabled(false);
+                button3.setText("X");
+                button3.setFocusable(false);
+                turn = true;
             }
         }
         else if(e.getSource() == button4) {
             if(turn) {
-                if(button4.getText() == "") {
-                    button4.setEnabled(false);
-                    button4.setText("O");
-                    button4.setFocusable(false);
-                    turn = false;
-                }
+                button4.setEnabled(false);
+                button4.setText("O");
+                button4.setFocusable(false);
+                turn = false;
             }
             else {
-                if(button4.getText() == "") {
-                    button4.setEnabled(false);
-                    button4.setText("X");
-                    button4.setFocusable(false);
-                    turn = true;
-                }
+                button4.setEnabled(false);
+                button4.setText("X");
+                button4.setFocusable(false);
+                turn = true;
             }
         }
         else if(e.getSource() == button5) {
             if(turn) {
-                if(button5.getText() == "") {
-                    button5.setEnabled(false);
-                    button5.setText("O");
-                    button5.setFocusable(false);
-                    turn = false;
-                }
+                button5.setEnabled(false);
+                button5.setText("O");
+                button5.setFocusable(false);
+                turn = false;
             }
             else {
-                if(button5.getText() == "") {
-                    button5.setEnabled(false);
-                    button5.setText("X");
-                    button5.setFocusable(false);
-                    turn = true;
-                }
+                button5.setEnabled(false);
+                button5.setText("X");
+                button5.setFocusable(false);
+                turn = true;
             }
         }
         else if(e.getSource() == button6) {
             if(turn) {
-                if(button6.getText() == "") {
-                    button6.setEnabled(false);
-                    button6.setText("O");
-                    button6.setFocusable(false);
-                    turn = false;
-                }
+                button6.setEnabled(false);
+                button6.setText("O");
+                button6.setFocusable(false);
+                turn = false;
             }
             else {
-                if(button6.getText() == "") {
-                    button6.setEnabled(false);
-                    button6.setText("X");
-                    button6.setFocusable(false);
-                    turn = true;
-                }
+                button6.setEnabled(false);
+                button6.setText("X");
+                button6.setFocusable(false);
+                turn = true;
             }
         }
         else if(e.getSource() == button7) {
             if(turn) {
-                if(button7.getText() == "") {
-                    button7.setEnabled(false);
-                    button7.setText("O");
-                    button7.setFocusable(false);
-                    turn = false;
-                }
+                button7.setEnabled(false);
+                button7.setText("O");
+                button7.setFocusable(false);
+                turn = false;
             }
             else {
-                if(button7.getText() == "") {
-                    button7.setEnabled(false);
-                    button7.setText("X");
-                    button7.setFocusable(false);
-                    turn = true;
-                }
+                button7.setEnabled(false);
+                button7.setText("X");
+                button7.setFocusable(false);
+                turn = true;
             }
         }
         else if(e.getSource() == button8) {
             if(turn) {
-                if(button8.getText() == "") {
-                    button8.setEnabled(false);
-                    button8.setText("O");
-                    button8.setFocusable(false);
-                    turn = false;
-                }
+                button8.setEnabled(false);
+                button8.setText("O");
+                button8.setFocusable(false);
+                turn = false;
             }
             else {
-                if(button8.getText() == "") {
-                    button8.setEnabled(false);
-                    button8.setText("X");
-                    button8.setFocusable(false);
-                    turn = true;
-                }
+
+                button8.setEnabled(false);
+                button8.setText("X");
+                button8.setFocusable(false);
+                turn = true;
             }
         }
         else if(e.getSource() == button9) {
             if(turn) {
-                if(button9.getText() == "") {
-                    button9.setEnabled(false);
-                    button9.setText("O");
-                    button9.setFocusable(false);
-                    turn = false;
-                }
+                button9.setEnabled(false);
+                button9.setText("O");
+                button9.setFocusable(false);
+                turn = false;
             }
             else {
-                if(button9.getText() == "") {
-                    button9.setEnabled(false);
-                    button9.setText("X");
-                    button9.setFocusable(false);
-                    turn = true;
-                }
+                button9.setEnabled(false);
+                button9.setText("X");
+                button9.setFocusable(false);
+                turn = true;
             }
         }
+        winningCombination();
     }
 }
