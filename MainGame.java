@@ -7,19 +7,19 @@ import java.util.Random;
 public class MainGame implements ActionListener {
     JFrame frame = new JFrame();
     JPanel panel1 = new JPanel();
-    JButton[] button = new JButton[9];
-    JButton button1 = new JButton("1");
-    JButton button2 = new JButton("2");
-    JButton button3 = new JButton("3");
-    JButton button4 = new JButton("4");
-    JButton button5 = new JButton("5");
-    JButton button6 = new JButton("6");
-    JButton button7 = new JButton("7");
-    JButton button8 = new JButton("8");
-    JButton button9 = new JButton("9");
+    JButton button1 = new JButton();
+    JButton button2 = new JButton();
+    JButton button3 = new JButton();
+    JButton button4 = new JButton();
+    JButton button5 = new JButton();
+    JButton button6 = new JButton();
+    JButton button7 = new JButton();
+    JButton button8 = new JButton();
+    JButton button9 = new JButton();
     ImageIcon image = new ImageIcon("C:\\Users\\Deep Kisku\\Desktop\\tic tac toe.png");
     static Random first_turn = new Random();
     static boolean turn = first_turn.nextBoolean();
+    int count = 0;
 
     MainGame() {
         button1.addActionListener(this);
@@ -54,7 +54,7 @@ public class MainGame implements ActionListener {
     }
 
 
-     void winningCombination() {
+    void winningCombination() {
         if(button1.getText().equals("X") && button2.getText().equals("X") && button3.getText().equals("X")) { /* when button1, button2 and button3 are marked X */
             frame.dispose();
             new ClosingPage("X");
@@ -119,6 +119,10 @@ public class MainGame implements ActionListener {
             frame.dispose();
             new ClosingPage("O");
         }
+        else if(count > 8) {
+            frame.dispose();
+            new ClosingPage("");
+        }
     }
 
     @Override
@@ -127,127 +131,154 @@ public class MainGame implements ActionListener {
             if(turn) {
                 button1.setEnabled(false);
                 button1.setText("O");
+                button1.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button1.setFocusable(false);
                 turn = false;
             }
             else {
                 button1.setEnabled(false);
                 button1.setText("X");
+                button1.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button1.setFocusable(false);
                 turn = true;
             }
+            count += 1;
         }
         else if(e.getSource() == button2) {
             if(turn) {
                 button2.setEnabled(false);
                 button2.setText("O");
+                button2.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button2.setFocusable(false);
                 turn = false;
             }
             else {
                 button2.setEnabled(false);
                 button2.setText("X");
+                button2.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button2.setFocusable(false);
                 turn = true;
             }
+            count += 1;
         }
         else if(e.getSource() == button3) {
             if(turn) {
                 button3.setEnabled(false);
                 button3.setText("O");
+                button3.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button3.setFocusable(false);
                 turn = false;
             }
             else {
                 button3.setEnabled(false);
                 button3.setText("X");
+                button3.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button3.setFocusable(false);
                 turn = true;
             }
+            count += 1;
         }
         else if(e.getSource() == button4) {
             if(turn) {
                 button4.setEnabled(false);
                 button4.setText("O");
+                button4.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button4.setFocusable(false);
                 turn = false;
             }
             else {
                 button4.setEnabled(false);
                 button4.setText("X");
+                button4.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button4.setFocusable(false);
                 turn = true;
             }
+            count += 1;
         }
         else if(e.getSource() == button5) {
             if(turn) {
                 button5.setEnabled(false);
                 button5.setText("O");
+                button5.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button5.setFocusable(false);
                 turn = false;
             }
             else {
                 button5.setEnabled(false);
                 button5.setText("X");
+                button5.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button5.setFocusable(false);
                 turn = true;
             }
+            count += 1;
         }
         else if(e.getSource() == button6) {
             if(turn) {
                 button6.setEnabled(false);
                 button6.setText("O");
+                button6.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button6.setFocusable(false);
                 turn = false;
             }
             else {
                 button6.setEnabled(false);
                 button6.setText("X");
+                button6.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button6.setFocusable(false);
                 turn = true;
             }
+            count += 1;
         }
         else if(e.getSource() == button7) {
             if(turn) {
                 button7.setEnabled(false);
                 button7.setText("O");
+                button7.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button7.setFocusable(false);
                 turn = false;
             }
             else {
                 button7.setEnabled(false);
                 button7.setText("X");
+                button7.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button7.setFocusable(false);
                 turn = true;
             }
+            count += 1;
         }
         else if(e.getSource() == button8) {
             if(turn) {
                 button8.setEnabled(false);
                 button8.setText("O");
+                button8.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button8.setFocusable(false);
                 turn = false;
             }
             else {
                 button8.setEnabled(false);
                 button8.setText("X");
+                button8.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button8.setFocusable(false);
                 turn = true;
             }
+            count += 1;
         }
         else if(e.getSource() == button9) {
             if(turn) {
                 button9.setEnabled(false);
                 button9.setText("O");
+                button9.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button9.setFocusable(false);
                 turn = false;
             }
             else {
                 button9.setEnabled(false);
                 button9.setText("X");
+                button9.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button9.setFocusable(false);
                 turn = true;
             }
+            count += 1;
         }
         winningCombination();
     }
