@@ -122,7 +122,11 @@ public class MainGame implements ActionListener {
         }
         else if(count > 8) {
             frame.dispose();
+<<<<<<< HEAD
             new ClosingPage("");
+=======
+            new Closingpage("");
+>>>>>>> 429f5c6a96ee7c309a2a4ad28f1a5cdf9f2d12d8
         }
     }
 
@@ -133,14 +137,20 @@ public class MainGame implements ActionListener {
                 button1.setEnabled(false);
                 button1.setText("O");
                 button1.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
+<<<<<<< HEAD
                 button1.setBackground(Color.GREEN);
+=======
+>>>>>>> 429f5c6a96ee7c309a2a4ad28f1a5cdf9f2d12d8
                 button1.setFocusable(false);
                 turn = false;
             }
             else {
                 button1.setEnabled(false);
                 button1.setText("X");
+<<<<<<< HEAD
                 button1.setBackground(Color.BLUE);
+=======
+>>>>>>> 429f5c6a96ee7c309a2a4ad28f1a5cdf9f2d12d8
                 button1.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button1.setFocusable(false);
                 turn = true;
@@ -151,7 +161,10 @@ public class MainGame implements ActionListener {
             if(turn) {
                 button2.setEnabled(false);
                 button2.setText("O");
+<<<<<<< HEAD
                 button2.setBackground(Color.GREEN);
+=======
+>>>>>>> 429f5c6a96ee7c309a2a4ad28f1a5cdf9f2d12d8
                 button2.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button2.setFocusable(false);
                 turn = false;
@@ -159,7 +172,10 @@ public class MainGame implements ActionListener {
             else {
                 button2.setEnabled(false);
                 button2.setText("X");
+<<<<<<< HEAD
                 button2.setBackground(Color.BLUE);
+=======
+>>>>>>> 429f5c6a96ee7c309a2a4ad28f1a5cdf9f2d12d8
                 button2.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button2.setFocusable(false);
                 turn = true;
@@ -170,7 +186,10 @@ public class MainGame implements ActionListener {
             if(turn) {
                 button3.setEnabled(false);
                 button3.setText("O");
+<<<<<<< HEAD
                 button3.setBackground(Color.GREEN);
+=======
+>>>>>>> 429f5c6a96ee7c309a2a4ad28f1a5cdf9f2d12d8
                 button3.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button3.setFocusable(false);
                 turn = false;
@@ -178,7 +197,10 @@ public class MainGame implements ActionListener {
             else {
                 button3.setEnabled(false);
                 button3.setText("X");
+<<<<<<< HEAD
                 button3.setBackground(Color.BLUE);
+=======
+>>>>>>> 429f5c6a96ee7c309a2a4ad28f1a5cdf9f2d12d8
                 button3.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button3.setFocusable(false);
                 turn = true;
@@ -189,7 +211,10 @@ public class MainGame implements ActionListener {
             if(turn) {
                 button4.setEnabled(false);
                 button4.setText("O");
+<<<<<<< HEAD
                 button4.setBackground(Color.GREEN);
+=======
+>>>>>>> 429f5c6a96ee7c309a2a4ad28f1a5cdf9f2d12d8
                 button4.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button4.setFocusable(false);
                 turn = false;
@@ -197,18 +222,28 @@ public class MainGame implements ActionListener {
             else {
                 button4.setEnabled(false);
                 button4.setText("X");
+<<<<<<< HEAD
                 button4.setBackground(Color.BLUE);
+=======
+>>>>>>> 429f5c6a96ee7c309a2a4ad28f1a5cdf9f2d12d8
                 button4.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button4.setFocusable(false);
                 turn = true;
             }
             count += 1;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 429f5c6a96ee7c309a2a4ad28f1a5cdf9f2d12d8
         }
         else if(e.getSource() == button5) {
             if(turn) {
                 button5.setEnabled(false);
                 button5.setText("O");
+<<<<<<< HEAD
                 button5.setBackground(Color.GREEN);
+=======
+>>>>>>> 429f5c6a96ee7c309a2a4ad28f1a5cdf9f2d12d8
                 button5.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button5.setFocusable(false);
                 turn = false;
@@ -216,7 +251,10 @@ public class MainGame implements ActionListener {
             else {
                 button5.setEnabled(false);
                 button5.setText("X");
+<<<<<<< HEAD
                 button5.setBackground(Color.BLUE);
+=======
+>>>>>>> 429f5c6a96ee7c309a2a4ad28f1a5cdf9f2d12d8
                 button5.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button5.setFocusable(false);
                 turn = true;
@@ -227,7 +265,10 @@ public class MainGame implements ActionListener {
             if(turn) {
                 button6.setEnabled(false);
                 button6.setText("O");
+<<<<<<< HEAD
                 button6.setBackground(Color.GREEN);
+=======
+>>>>>>> 429f5c6a96ee7c309a2a4ad28f1a5cdf9f2d12d8
                 button6.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button6.setFocusable(false);
                 turn = false;
@@ -235,7 +276,10 @@ public class MainGame implements ActionListener {
             else {
                 button6.setEnabled(false);
                 button6.setText("X");
+<<<<<<< HEAD
                 button6.setBackground(Color.BLUE);
+=======
+>>>>>>> 429f5c6a96ee7c309a2a4ad28f1a5cdf9f2d12d8
                 button6.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button6.setFocusable(false);
                 turn = true;
@@ -246,7 +290,10 @@ public class MainGame implements ActionListener {
             if(turn) {
                 button7.setEnabled(false);
                 button7.setText("O");
+<<<<<<< HEAD
                 button7.setBackground(Color.GREEN);
+=======
+>>>>>>> 429f5c6a96ee7c309a2a4ad28f1a5cdf9f2d12d8
                 button7.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button7.setFocusable(false);
                 turn = false;
@@ -254,7 +301,10 @@ public class MainGame implements ActionListener {
             else {
                 button7.setEnabled(false);
                 button7.setText("X");
+<<<<<<< HEAD
                 button7.setBackground(Color.BLUE);
+=======
+>>>>>>> 429f5c6a96ee7c309a2a4ad28f1a5cdf9f2d12d8
                 button7.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button7.setFocusable(false);
                 turn = true;
@@ -265,7 +315,10 @@ public class MainGame implements ActionListener {
             if(turn) {
                 button8.setEnabled(false);
                 button8.setText("O");
+<<<<<<< HEAD
                 button8.setBackground(Color.GREEN);
+=======
+>>>>>>> 429f5c6a96ee7c309a2a4ad28f1a5cdf9f2d12d8
                 button8.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button8.setFocusable(false);
                 turn = false;
@@ -273,7 +326,10 @@ public class MainGame implements ActionListener {
             else {
                 button8.setEnabled(false);
                 button8.setText("X");
+<<<<<<< HEAD
                 button8.setBackground(Color.BLUE);
+=======
+>>>>>>> 429f5c6a96ee7c309a2a4ad28f1a5cdf9f2d12d8
                 button8.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button8.setFocusable(false);
                 turn = true;
@@ -284,7 +340,10 @@ public class MainGame implements ActionListener {
             if(turn) {
                 button9.setEnabled(false);
                 button9.setText("O");
+<<<<<<< HEAD
                 button9.setBackground(Color.GREEN);
+=======
+>>>>>>> 429f5c6a96ee7c309a2a4ad28f1a5cdf9f2d12d8
                 button9.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button9.setFocusable(false);
                 turn = false;
@@ -292,12 +351,19 @@ public class MainGame implements ActionListener {
             else {
                 button9.setEnabled(false);
                 button9.setText("X");
+<<<<<<< HEAD
                 button9.setBackground(Color.BLUE);
+=======
+>>>>>>> 429f5c6a96ee7c309a2a4ad28f1a5cdf9f2d12d8
                 button9.setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 70));
                 button9.setFocusable(false);
                 turn = true;
             }
+<<<<<<< HEAD
             count += 1;
+=======
+            count += 1
+>>>>>>> 429f5c6a96ee7c309a2a4ad28f1a5cdf9f2d12d8
         }
         winningCombination();
     }
