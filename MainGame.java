@@ -16,7 +16,7 @@ public class MainGame implements ActionListener {
     JButton button7 = new JButton();
     JButton button8 = new JButton();
     JButton button9 = new JButton();
-    ImageIcon image = new ImageIcon("C:\\Users\\Deep Kisku\\Desktop\\tic tac toe.png");
+    ImageIcon image = new ImageIcon("C:\\Users\\Deep Kisku\\Desktop\\tic_tac_toe.png");
     static Random first_turn = new Random();
     static boolean turn = first_turn.nextBoolean();
     int count = 0;
