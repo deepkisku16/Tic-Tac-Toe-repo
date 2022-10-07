@@ -15,7 +15,7 @@ public class ClosingPage implements ActionListener {
     ClosingPage(String str) {
         label.setIcon(picture);
         if(str.equals("X") || str.equals("O")) {
-            label.setText(str + " have won");
+            label.setText(str + " have won!!");
         }
         else {
             label.setText("Draw Game");
