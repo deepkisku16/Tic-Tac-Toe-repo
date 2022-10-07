@@ -16,7 +16,7 @@ public class MainGame implements ActionListener {
     JButton button7 = new JButton();
     JButton button8 = new JButton();
     JButton button9 = new JButton();
-    ImageIcon image1 = new ImageIcon("C:\\Users\\Deep Kisku\\Desktop\\tic_tac_toe.png");
+    ImageIcon image = new ImageIcon("C:\\Users\\Deep Kisku\\Desktop\\tic_tac_toe.png");
     static Random first_turn = new Random();
     static boolean turn = first_turn.nextBoolean();
     int count = 0;
@@ -48,7 +48,7 @@ public class MainGame implements ActionListener {
         frame.setSize(500, 500);
         frame.setResizable(false);
         frame.setTitle("Tic-Tac-Toe");
-        frame.setIconImage(image1.getImage());
+        frame.setIconImage(image.getImage());
         frame.add(panel1, BorderLayout.CENTER);
         frame.setVisible(true);
     }
