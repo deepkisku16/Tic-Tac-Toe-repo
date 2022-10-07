@@ -29,7 +29,7 @@ public class StartPage implements ActionListener {
         panel2.setBackground(Color.CYAN);
         panel2.add(button);
 
-        frame.setTitle("Tic Tac Toe");
+        frame.setTitle("Tic-Tac-Toe");
         frame.setLayout(new BorderLayout(0, 40));
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setIconImage(image.getImage());
